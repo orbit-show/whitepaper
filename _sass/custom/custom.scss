@@ -190,12 +190,17 @@ pre {
   width: auto;
 }
 
-// Suppress just-the-docs gradient on logo link hover
+// Lock site-title background in all states
+.site-title,
+a.site-title {
+  background: #0d1116 !important;
+}
+
 .site-title:hover,
 a.site-title:hover,
 .site-title:focus,
 a.site-title:focus {
-  background-image: none !important;
+  background: #0d1116 !important;
 }
 
 // Force logo background-image to always show (survives any hover state)
