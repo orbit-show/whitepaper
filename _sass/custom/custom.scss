@@ -1,21 +1,144 @@
-// Orbit brand color overrides for just-the-docs dark theme
-:root,
-[data-theme="dark"] {
-  --link-color: #60a5fa;
-  --link-color-visited: #93c5fd;
-  --btn-primary-color: #2563eb;
-  --body-background-color: #0f1117;
-  --sidebar-color: #161b22;
-  --nav-border-color: #21262d;
+// Orbit dark theme — forced CSS overrides
+// Targets just-the-docs default class names
+
+body {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
 }
 
-// Accent blue for active nav items
-.nav-list-item .nav-list-link.active {
+.side-bar {
+  background-color: #161b22 !important;
+  border-right: 1px solid #21262d !important;
+}
+
+.site-nav {
+  background-color: #161b22 !important;
+}
+
+.site-header {
+  background-color: #0d1117 !important;
+  border-bottom: 1px solid #21262d !important;
+}
+
+.main-content-wrap,
+.main-content {
+  background-color: #0d1117 !important;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: #e6edf3 !important;
+}
+
+// Body text
+p, li, td, th, blockquote {
+  color: #c9d1d9 !important;
+}
+
+// Horizontal rule
+hr {
+  border-color: #21262d !important;
+}
+
+// Links — Orbit blue
+a {
   color: #60a5fa !important;
-  font-weight: 600;
+
+  &:hover {
+    color: #93c5fd !important;
+  }
+
+  &:visited {
+    color: #93c5fd !important;
+  }
 }
 
-// Logo sizing
-.site-logo img {
-  max-height: 32px;
+// Navigation items
+.nav-list-item .nav-list-link {
+  color: #8b949e !important;
+
+  &:hover {
+    background-color: #21262d !important;
+    color: #60a5fa !important;
+  }
+
+  &.active {
+    background-color: #21262d !important;
+    color: #60a5fa !important;
+    font-weight: 600;
+  }
+}
+
+// Search bar
+.search-input {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
+  border-color: #30363d !important;
+}
+
+.search-input::placeholder {
+  color: #6e7681 !important;
+}
+
+// Tables
+table {
+  border-color: #21262d !important;
+
+  th {
+    background-color: #161b22 !important;
+    color: #e6edf3 !important;
+    border-color: #21262d !important;
+  }
+
+  td {
+    color: #c9d1d9 !important;
+    border-color: #21262d !important;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #161b22 !important;
+  }
+}
+
+// Inline code
+code {
+  background-color: #21262d !important;
+  color: #79c0ff !important;
+}
+
+// Code blocks
+pre {
+  background-color: #21262d !important;
+
+  code {
+    color: #c9d1d9 !important;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: #161b22 !important;
+  color: #6e7681 !important;
+  border-top: 1px solid #21262d !important;
+
+  a {
+    color: #60a5fa !important;
+  }
+}
+
+// Logo in header
+.site-logo img,
+.site-title img {
+  max-height: 28px;
+  width: auto;
+}
+
+// Aux links (top-right)
+.aux-nav-list-item a {
+  color: #60a5fa !important;
+}
+
+// Hide just-the-docs attribution footer
+.site-footer {
+  display: none !important;
 }
