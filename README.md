@@ -1,3 +1,8 @@
+---
+title: Orbit Whitepaper
+nav_order: 1
+---
+
 # Orbit Whitepaper
 
 ---
