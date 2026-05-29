@@ -190,15 +190,13 @@ pre {
   width: auto;
 }
 
-// Logo link hover — no background change
-.site-logo,
+// Logo link hover — clear just-the-docs gradient, preserve .site-logo background-image (actual logo)
 .site-title,
 a.site-title {
   &:hover,
   &:focus {
-    background: transparent !important;
+    background-color: transparent !important;
     background-image: none !important;
-    opacity: 0.85 !important;
   }
 }
 
