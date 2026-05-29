@@ -92,12 +92,14 @@ a {
   border-bottom: 1px solid #21262d !important;
 }
 
-// Search wrapper — direct flex child of main-header
+// Search wrapper — fills main-header height, centers pill inside
 .search[role="search"] {
-  flex: 1 !important;
+  flex-grow: 1 !important;
+  height: 100% !important;
   display: flex !important;
   align-items: center !important;
-  padding: 12px 20px !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
 }
 
 // Search bar — pill shape matching testnet style
@@ -106,7 +108,7 @@ a {
   background-color: #1c2128 !important;
   border: 1px solid #30363d !important;
   overflow: hidden !important;
-  padding: 0 8px !important;
+  padding: 0 12px !important;
   height: 40px !important;
   width: 100% !important;
   display: flex !important;
