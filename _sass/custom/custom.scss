@@ -195,6 +195,13 @@ pre {
 // Aux links (top-right)
 .aux-nav-list-item a {
   color: #60a5fa !important;
+
+  &:hover,
+  &:focus {
+    background: #0d1116 !important;
+    background-image: none !important;
+    color: #93c5fd !important;
+  }
 }
 
 // Hide just-the-docs attribution footer
