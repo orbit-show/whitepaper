@@ -84,15 +84,35 @@ a {
   }
 }
 
-// Search bar
+// Search bar — pill shape matching testnet style
+.search-input-wrap {
+  border-radius: 24px !important;
+  background-color: #1c2128 !important;
+  border: 1px solid #30363d !important;
+  overflow: hidden;
+}
+
 .search-input {
-  background-color: #21262d !important;
+  background-color: transparent !important;
   color: #c9d1d9 !important;
-  border-color: #30363d !important;
+  border: none !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
 }
 
 .search-input::placeholder {
   color: #6e7681 !important;
+}
+
+.search-overlay {
+  border-radius: 24px !important;
+}
+
+// Search results dropdown
+.search-results {
+  border-radius: 12px !important;
+  border: 1px solid #30363d !important;
+  background-color: #1c2128 !important;
 }
 
 // Tables
