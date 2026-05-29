@@ -84,6 +84,22 @@ a {
   }
 }
 
+// Top bar (main-header) — flex container for search + aux nav
+.main-header {
+  display: flex !important;
+  align-items: center !important;
+  background-color: #0d1116 !important;
+  border-bottom: 1px solid #21262d !important;
+}
+
+// Search wrapper — direct flex child of main-header
+.search[role="search"] {
+  flex: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 12px 20px !important;
+}
+
 // Search bar — pill shape matching testnet style
 .search-input-wrap {
   border-radius: 24px !important;
@@ -91,21 +107,11 @@ a {
   border: 1px solid #30363d !important;
   overflow: hidden !important;
   padding: 0 8px !important;
-  margin: 1px 20px !important;
   height: 40px !important;
-  max-height: 40px !important;
-  align-self: center !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-}
-
-// Header flex centering so margin takes effect
-.site-header {
+  width: 100% !important;
   display: flex !important;
   align-items: center !important;
-  height: 64px !important;
-  padding: 0 !important;
-  overflow: visible !important;
+  box-sizing: border-box !important;
 }
 
 .search-input-wrap input,
@@ -182,23 +188,26 @@ pre {
   width: auto;
 }
 
-// Logo link hover — suppress default background
+// Logo link hover — no background change
 .site-logo,
-.site-title {
+.site-title,
+a.site-title {
   &:hover,
   &:focus {
-    background: #0d1116 !important;
+    background: transparent !important;
     background-image: none !important;
+    opacity: 0.85 !important;
   }
 }
 
-// Aux links (top-right)
-.aux-nav-list-item a {
+// Aux links (top-right) — site-button is the actual class on the <a>
+.aux-nav-list-item a,
+.aux-nav-list-item .site-button {
   color: #60a5fa !important;
 
   &:hover,
   &:focus {
-    background: #0d1116 !important;
+    background: transparent !important;
     background-image: none !important;
     color: #93c5fd !important;
   }
