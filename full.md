@@ -1,6 +1,7 @@
 ---
 title: Orbit Whitepaper
 nav_order: 0
+permalink: /
 ---
 
 # Orbit Whitepaper
