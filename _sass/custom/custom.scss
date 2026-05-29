@@ -1,0 +1,21 @@
+// Orbit brand color overrides for just-the-docs dark theme
+:root,
+[data-theme="dark"] {
+  --link-color: #60a5fa;
+  --link-color-visited: #93c5fd;
+  --btn-primary-color: #2563eb;
+  --body-background-color: #0f1117;
+  --sidebar-color: #161b22;
+  --nav-border-color: #21262d;
+}
+
+// Accent blue for active nav items
+.nav-list-item .nav-list-link.active {
+  color: #60a5fa !important;
+  font-weight: 600;
+}
+
+// Logo sizing
+.site-logo img {
+  max-height: 32px;
+}
