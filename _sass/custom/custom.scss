@@ -15,17 +15,23 @@ body {
   background-color: #0d1116 !important;
 }
 
-.side-bar {
+// Sidebar, header, nav — all unified to #0d1116
+.side-bar,
+.side-bar > *,
+.site-nav,
+.site-header,
+.site-header > *,
+.site-logo,
+.site-title,
+.nav-list {
   background-color: #0d1116 !important;
+}
+
+.side-bar {
   border-right: 1px solid #21262d !important;
 }
 
-.site-nav {
-  background-color: #0d1116 !important;
-}
-
 .site-header {
-  background-color: #0d1116 !important;
   border-bottom: 1px solid #21262d !important;
 }
 

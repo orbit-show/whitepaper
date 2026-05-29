@@ -59,6 +59,3 @@ The progressive agent layer is contingent on autonomous AI agents becoming a mea
 
 Nothing in this document is financial, legal, or investment advice.
 
----
-
-*Orbit Whitepaper. For the latest version, visit whitepaper.orbit.show.*

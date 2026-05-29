@@ -20,6 +20,3 @@ Orbit's execution model runs on a CLOB with signed-order matching and on-chain s
 
 Orbit is the financial decision and execution layer where uncertainty becomes a tradeable, verifiable, and programmable asset. Asia-first. Designed for agents. Built on-chain. Open to anyone.
 
----
-
-*Orbit Whitepaper. For the latest version, visit whitepaper.orbit.show.*
