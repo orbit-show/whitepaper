@@ -190,6 +190,14 @@ pre {
   width: auto;
 }
 
+// Suppress just-the-docs gradient on logo link hover
+.site-title:hover,
+a.site-title:hover,
+.site-title:focus,
+a.site-title:focus {
+  background-image: none !important;
+}
+
 // Force logo background-image to always show (survives any hover state)
 .site-logo {
   background-image: url("/assets/Orbit-White-png.png") !important;
