@@ -1,9 +1,18 @@
 // Orbit dark theme — forced CSS overrides
 // Targets just-the-docs default class names
 
+html,
 body {
   background-color: #0d1116 !important;
   color: #c9d1d9 !important;
+}
+
+// Catch all main content-area elements that just-the-docs dark theme sets separately
+.main,
+.main-header,
+.content-wrap,
+.js-toc-content {
+  background-color: #0d1116 !important;
 }
 
 .side-bar {
