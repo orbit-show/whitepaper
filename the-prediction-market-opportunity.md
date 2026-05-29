@@ -1,5 +1,5 @@
 ---
-title: Opportunity
+title: The Prediction Market Opportunity
 nav_order: 2
 ---
 

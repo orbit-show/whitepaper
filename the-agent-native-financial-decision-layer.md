@@ -1,5 +1,5 @@
 ---
-title: Agent-Native Layer
+title: The Agent-Native Financial Decision Layer
 nav_order: 4
 ---
 
