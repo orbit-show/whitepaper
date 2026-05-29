@@ -4,10 +4,6 @@ nav_order: 1
 permalink: /
 ---
 
-# Orbit Whitepaper
-
----
-
 # Abstract
 
 Orbit is Asia-first event-trading infrastructure for the agent economy. It gives humans and autonomous AI agents a shared venue to discover, price, trade, and settle real-world event outcomes through verifiable, programmable, stablecoin-native, and non-custodial markets.
