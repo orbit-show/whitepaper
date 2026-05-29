@@ -190,14 +190,12 @@ pre {
   width: auto;
 }
 
-// Logo link hover — clear just-the-docs gradient, preserve .site-logo background-image (actual logo)
-.site-title,
-a.site-title {
-  &:hover,
-  &:focus {
-    background-color: transparent !important;
-    background-image: none !important;
-  }
+// Force logo background-image to always show (survives any hover state)
+.site-logo {
+  background-image: url("/assets/Orbit-White-png.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
 }
 
 // Aux links (top-right) — site-button is the actual class on the <a>
