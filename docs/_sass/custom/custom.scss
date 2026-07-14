@@ -1,0 +1,230 @@
+// Orbit dark theme — forced CSS overrides
+// Targets just-the-docs default class names
+
+html,
+body {
+  background-color: #0d1116 !important;
+  color: #c9d1d9 !important;
+}
+
+// Catch all main content-area elements that just-the-docs dark theme sets separately
+.main,
+.main-header,
+.content-wrap,
+.js-toc-content {
+  background-color: #0d1116 !important;
+}
+
+// Sidebar, header, nav — all unified to #0d1116
+.side-bar,
+.side-bar > *,
+.site-nav,
+.site-header,
+.site-header > *,
+.site-logo,
+.site-title,
+.nav-list {
+  background-color: #0d1116 !important;
+}
+
+.side-bar {
+  border-right: 1px solid #21262d !important;
+}
+
+.site-header {
+  border-bottom: 1px solid #21262d !important;
+}
+
+.main-content-wrap,
+.main-content {
+  background-color: #0d1116 !important;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: #e6edf3 !important;
+}
+
+// Body text
+p, li, td, th, blockquote {
+  color: #c9d1d9 !important;
+}
+
+// Horizontal rule
+hr {
+  border-color: #21262d !important;
+}
+
+// Links — Orbit blue
+a {
+  color: #60a5fa !important;
+
+  &:hover {
+    color: #93c5fd !important;
+  }
+
+  &:visited {
+    color: #93c5fd !important;
+  }
+}
+
+// Navigation items
+.nav-list-item .nav-list-link {
+  color: #8b949e !important;
+
+  &:hover {
+    background: #161b22 !important;
+    color: #60a5fa !important;
+  }
+
+  &.active {
+    background: #161b22 !important;
+    color: #60a5fa !important;
+    font-weight: 600;
+  }
+}
+
+// Top bar (main-header) — flex container for search + aux nav
+.main-header {
+  display: flex !important;
+  align-items: center !important;
+  background-color: #0d1116 !important;
+  border-bottom: 1px solid #21262d !important;
+}
+
+// Search wrapper — fills main-header height, centers pill inside
+.search[role="search"] {
+  flex-grow: 1 !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+}
+
+// Search bar — pill shape matching testnet style
+.search-input-wrap {
+  border-radius: 24px !important;
+  background-color: #1c2128 !important;
+  border: 1px solid #30363d !important;
+  overflow: hidden !important;
+  padding: 0 12px !important;
+  height: 40px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+.search-input-wrap input,
+.search-input {
+  background-color: transparent !important;
+  color: #c9d1d9 !important;
+  border: none !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.search-input::placeholder {
+  color: #6e7681 !important;
+}
+
+// Search results dropdown
+.search-results {
+  border-radius: 12px !important;
+  border: 1px solid #30363d !important;
+  background-color: #1c2128 !important;
+}
+
+// Tables
+table {
+  border-color: #21262d !important;
+
+  th {
+    background-color: #161b22 !important;
+    color: #e6edf3 !important;
+    border-color: #21262d !important;
+  }
+
+  td {
+    color: #c9d1d9 !important;
+    border-color: #21262d !important;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #161b22 !important;
+  }
+}
+
+// Inline code
+code {
+  background-color: #21262d !important;
+  color: #79c0ff !important;
+}
+
+// Code blocks
+pre {
+  background-color: #21262d !important;
+
+  code {
+    color: #c9d1d9 !important;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: #161b22 !important;
+  color: #6e7681 !important;
+  border-top: 1px solid #21262d !important;
+
+  a {
+    color: #60a5fa !important;
+  }
+}
+
+// Logo in header
+.site-logo img,
+.site-title img {
+  max-height: 28px;
+  width: auto;
+}
+
+// Lock site-title background in all states
+.site-title,
+a.site-title {
+  background: #0d1116 !important;
+}
+
+.site-title:hover,
+a.site-title:hover,
+.site-title:focus,
+a.site-title:focus {
+  background: #0d1116 !important;
+}
+
+// Force logo background-image to always show (survives any hover state)
+.site-logo {
+  background-image: url("/assets/Orbit-White-png.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
+}
+
+// Aux links (top-right) — site-button is the actual class on the <a>
+.aux-nav-list-item a,
+.aux-nav-list-item .site-button {
+  color: #60a5fa !important;
+
+  &:hover,
+  &:focus {
+    background: transparent !important;
+    background-image: none !important;
+    color: #93c5fd !important;
+  }
+}
+
+// Hide just-the-docs attribution footer
+.site-footer {
+  display: none !important;
+}

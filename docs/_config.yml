@@ -1,0 +1,13 @@
+title: Orbit Whitepaper
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+search_enabled: true
+color_scheme: dark
+logo: "/assets/Orbit-White-png.png"
+favicon_ico: "/assets/Orbit-White-png.png"
+
+aux_links:
+  "orbit.show":
+    - "https://orbit.show"
+
